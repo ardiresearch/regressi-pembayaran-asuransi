@@ -1,0 +1,89 @@
+{
+  "judul_aplikasi": "Prediksi Biaya Tagihan Asuransi Kesehatan",
+  "target": "charges",
+  "label_target": "Biaya tagihan asuransi",
+  "satuan_target": "USD",
+  "varian_terpilih": 3,
+  "nama_varian": "Pemilihan Fitur",
+  "kolom_numerik": [
+    "age",
+    "bmi"
+  ],
+  "kolom_kategorik": [
+    "sex",
+    "smoker",
+    "region"
+  ],
+  "kategori_opsi": {
+    "sex": [
+      "female",
+      "male"
+    ],
+    "smoker": [
+      "no",
+      "yes"
+    ],
+    "region": [
+      "northeast",
+      "northwest",
+      "southeast",
+      "southwest"
+    ]
+  },
+  "rentang_numerik": {
+    "age": {
+      "min": 18.0,
+      "max": 64.0,
+      "median": 39.0,
+      "bulat": true
+    },
+    "bmi": {
+      "min": 15.96,
+      "max": 53.13,
+      "median": 30.2,
+      "bulat": false
+    }
+  },
+  "label_kolom": {
+    "age": "Usia (tahun)",
+    "bmi": "Indeks Massa Tubuh (BMI)",
+    "children": "Jumlah tanggungan anak",
+    "sex": "Jenis kelamin",
+    "smoker": "Perokok",
+    "region": "Wilayah tempat tinggal"
+  },
+  "perbandingan_varian": [
+    {
+      "varian": "Garis dasar (rata-rata)",
+      "MAE": 9861.797880026175,
+      "RMSE": 13612.426003009037,
+      "R2": -0.008391982350864469
+    },
+    {
+      "varian": "Dasar",
+      "MAE": 9620.928319571061,
+      "RMSE": 12589.409964694138,
+      "R2": 0.13748020188497823
+    },
+    {
+      "varian": "Perlakuan Data",
+      "MAE": 9627.470359388639,
+      "RMSE": 12573.90573246559,
+      "R2": 0.1396033312208449
+    },
+    {
+      "varian": "Pemilihan Fitur",
+      "MAE": 4175.910753583707,
+      "RMSE": 5952.147494708729,
+      "R2": 0.8072005950734585
+    }
+  ],
+  "metrik_uji": {
+    "mae": 4175.910753583707,
+    "rmse": 5952.147494708729,
+    "r2": 0.8072005950734585
+  },
+  "sumber_dataset": "https://www.kaggle.com/datasets/mirichoi0218/insurance",
+  "versi_sklearn": "1.9.1",
+  "tanggal_latih": "2026-11-25"
+}
